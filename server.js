@@ -13,6 +13,7 @@ app.get("/", (req, res)=>{
 
 app.post('/', (req, res)=>{
     console.log(req.body)
+    res.json({"completion": req.body})
 })
 app.listen(port, ()=>{
     console.log("serveris running on port 3000")
